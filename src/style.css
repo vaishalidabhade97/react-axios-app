@@ -1,0 +1,9 @@
+.textDark{
+    color:#161537 !important;
+    font-size: 1.33rem;
+    font-weight: 900;
+    text-transform: uppercase !important;
+    font-family: "Source Sans Pro",sans-serif;
+    line-height: 1;
+    margin-left:50%;
+  }
