@@ -7,7 +7,7 @@ import './components/create.css';
 function App() {
   return (
     <Router>
-      <div className="App1" style={{marginLeft:"30%", marginRight:"30%"}}>
+      <div className="App1" >
         <header>
          
           <div id="bg">
