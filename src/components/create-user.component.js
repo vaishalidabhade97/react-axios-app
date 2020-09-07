@@ -26,7 +26,7 @@ export default class CreateUser extends Component{
     }
 
     loginPage(){
-        window.location.assign('/users');
+        window.location.assign('/login');
     
     }
     postData(){
@@ -35,15 +35,11 @@ export default class CreateUser extends Component{
             email: this.state.email,
             password: this.state.password
         }
-        // console.log(this.state.password);
         axios.post('https://run.mocky.io/v3/2ef706ec-6347-4ae5-9f9c-ed2c0d77edd9', userObj)
         .then((res)=>{
-            // delete res.data.user["password"];
             res.data.user.email=this.state.email;
             res.data.user.password=this.state.password;
-            // console.log(res.data);
             this.loginPage();
-            // console.log(res.data.user.password);
         }).catch((error)=>{
             console.log(error);
         })
@@ -52,15 +48,15 @@ export default class CreateUser extends Component{
         axios.get('https://run.mocky.io/v3/a704e123-2ac0-4976-b769-6e9adb8549c2')
         .then(res => {
             this.setState({usersCollection: res.data});
-            // console.log(res.data.user.email);
             if(res.data.user.email === this.state.email){
-                console.log("exist");
                 document.getElementById("password").setAttribute("type", "password");
                 document.getElementById("label").innerText="Enter your password";
                 document.getElementById("email").setAttribute("type", "hidden");
                 document.getElementById("next-btn").setAttribute("hidden","true");
                 document.getElementById("login-btn").removeAttribute("hidden");
                 
+            }else{
+                alert("Enter valid email");
             }
         })
         .catch(function(error){
