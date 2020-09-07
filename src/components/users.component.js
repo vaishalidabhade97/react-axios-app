@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import './create.css';
 // import DataTable from './data-table';
 export default class Users extends Component{
@@ -25,7 +25,7 @@ export default class Users extends Component{
     // }
     render(){
         return(
-            <div className="welcome" style={{marginTop:"30%"}}>
+            <div className="welcome">
                 <div>Welcome to Glabbr</div>
           
             </div>

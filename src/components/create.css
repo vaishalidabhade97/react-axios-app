@@ -4,39 +4,34 @@
   box-sizing: border-box;
   box-shadow: 0 4px 38px 0 rgba(22,21,55,.06),0 0 21px 0 rgba(22,21,55,.03);
   border-radius: 5px;
+  max-width: 30.66rem;
+  margin-left:auto;
+  margin-right: auto;
 }
 .welcome{
   text-align: center;
+  margin-top: 30%;
+  margin-bottom: 50%;
 }
 .form-control{
   box-sizing: border-box;
   margin: 0;
-  /* color: rgba(0,0,0,.65); */
   font-variant: tabular-nums;
   list-style: none;
-  /* -webkit-font-feature-settings: "tnum","tnum"; */
-  font-feature-settings: "tnum";
   position: relative;
   display: inline-block;
   width: 80%;
   min-width: 0;
-  padding: 7px 13px;
+  padding: 7px 10px;
   color: #161537;
   font-size: 15px;
   line-height: 1.5715;
   background-color: #fff;
   background-image: none;
   border: 1px solid #e4e9f0;
-      border-top-color: rgb(228, 233, 240);
-      border-right-color: rgb(228, 233, 240);
-      border-right-width: 1px;
-      border-bottom-color: rgb(228, 233, 240);
-      border-left-color: rgb(228, 233, 240);
   border-radius: 2px;
   box-shadow: none !important;
-    overflow: visible;
-  /* margin-left:1%; */
-  /* -webkit-transition: all .3s; */
+  overflow: visible;
   transition: all .3s;
   }
   .form-control:hover{
@@ -45,32 +40,34 @@
   }
   .form-group{
       text-align: center;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 11px;
+      padding-bottom: 11px;
   }
   .sub-btn{
     background-color: #5dc698;
     border-color: #5dc698;
-    color:#fff !important;
+    color:#fff;
     cursor: pointer;
     font-size: 1.2rem;
-    font-weight: 700 !important;
-    outline: none !important;
-    box-shadow: none !important;
+    font-weight: 700;
+    outline: none;
+    box-shadow: none;
     border-radius: 2px;
     width: 80%;
-    padding: 7px 13px;
-    box-shadow: none !important;
+    box-shadow: none;
     overflow: visible;
-    padding: .375rem .75rem;
+    padding: .375rem .375rem;
   }
-  .sub-btn:hover{
-    transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
+  .copyright{
+    color: #c3bedc;
+    text-align: center;
+    padding-top: 7%;
+    margin-bottom: 2%;
   }
   .mr-2{
-    margin-right: .5rem !important;
+    margin-right: .5rem;
     font-size: 1.2rem;
-    text-align: center !important;
+    text-align: center;
     color: #786fa4;
     line-height: 1.5;
     font-family: "Source Sans Pro",sans-serif;
@@ -95,11 +92,11 @@
     font-family:"Source Sans Pro,sans-serif";
   }
   .signup{
-      color: #1b55e3 !important;
-      font-weight: 700 !important;
+      color: #1b55e3;
+      font-weight: 700;
       cursor: pointer;
       font-size: 1.2rem;
-      text-align: center !important;
+      text-align: center;
       line-height: 1.5;
       font-family: "Source Sans Pro",sans-serif;
     
